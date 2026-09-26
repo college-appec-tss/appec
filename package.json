@@ -1,0 +1,15 @@
+{
+  "name": "textbee-sms-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simple TextBee SMS dashboard with persistent JSON queue and retry worker",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.2.1"
+  }
+}

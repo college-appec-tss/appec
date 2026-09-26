@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>College APEC/TSS College APEC/TSS Free SMS</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="shell">
+    <section id="loginView" class="card login-card" aria-labelledby="loginTitle">
+      <h1 id="loginTitle">Enter admin token</h1>
+      <label for="token">Admin token</label>
+      <input id="token" type="password" autocomplete="current-password" placeholder="Enter token">
+      <button id="loginBtn" class="primary">Continue</button>
+      <p id="loginError" class="error" role="alert"></p>
+    </section>
+
+    <section id="appView" hidden>
+      <header class="topbar">
+        <div>
+          <h1>College APEC/TSS College APEC/TSS Free SMS</h1>
+          <p class="muted">Simple TextBee Android gateway dashboard</p>
+        </div>
+        <div id="gatewayBadge" class="badge unknown" role="status" aria-live="polite">Checking gateway…</div>
+      </header>
+
+      <section class="gateway card" aria-labelledby="gatewayTitle">
+        <div>
+          <h2 id="gatewayTitle">Android gateway</h2>
+          <p id="gatewayDetail" class="muted">Loading device status…</p>
+        </div>
+        <button id="refreshBtn" class="secondary" type="button">Refresh</button>
+      </section>
+
+      <section class="card composer" aria-labelledby="sendTitle">
+        <h2 id="sendTitle">Send an SMS</h2>
+        <form id="smsForm">
+          <label for="recipient">Recipient number</label>
+          <input id="recipient" inputmode="tel" autocomplete="tel" placeholder="+2507XXXXXXXX" required>
+          <label for="message">Message</label>
+          <textarea id="message" maxlength="1600" placeholder="Write your message…" required></textarea>
+          <button id="sendBtn" class="primary" type="submit"><span id="sendText">Send message</span><span id="sendSpinner" class="spinner" hidden></span></button>
+          <p id="formStatus" class="muted" role="status" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <section class="card" aria-labelledby="historyTitle">
+        <div class="section-head">
+          <div>
+            <h2 id="historyTitle">Messages</h2>
+            <p class="muted">Queued messages stay on this server and retry automatically.</p>
+          </div>
+        </div>
+        <div id="messages" class="messages" aria-live="polite"></div>
+      </section>
+    </section>
+  </main>
+  <style>
+#promoBlocker {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  padding: 20px;
+}
+
+#promoBox {
+  max-width: 480px;
+  width: 100%;
+  background: white;
+  border-radius: 18px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0,0,0,.3);
+}
+
+#promoBox h2 {
+  margin-top: 0;
+}
+
+#promoCountdown {
+  font-size: 32px;
+  font-weight: bold;
+  margin: 18px 0;
+}
+
+#promoBox a {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 8px;
+  background: #128C7E;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 5px;
+}
+
+#promoContinue {
+  padding: 12px 20px;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+#promoContinue:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+</style>
+
+<div id="promoBlocker">
+  <div id="promoBox">
+    <h2>?? DebitTrack</h2>
+    <p><strong>Smart Debt Tracking for Businesses</strong></p>
+    <p>Track customer debts and manage SMS reminders more easily with DebitTrack.</p>
+
+    <div id="promoCountdown">10</div>
+
+    <a href="https://debt-tracking-hub-frontend.onrender.com/" target="_blank" rel="noopener">
+      Visit DebitTrack
+    </a>
+
+    <button id="promoContinue" type="button" disabled>
+      Continue
+    </button>
+  </div>
+</div>
+
+<script>
+(function () {
+  const blocker = document.getElementById('promoBlocker');
+  const countdown = document.getElementById('promoCountdown');
+  const continueBtn = document.getElementById('promoContinue');
+
+  let seconds = 10;
+
+  const timer = setInterval(function () {
+    seconds--;
+    countdown.textContent = seconds;
+
+    if (seconds <= 0) {
+      clearInterval(timer);
+      countdown.textContent = '?';
+      continueBtn.disabled = false;
+      continueBtn.textContent = 'Continue to SMS Dashboard';
+    }
+  }, 1000);
+
+  continueBtn.addEventListener('click', function () {
+    blocker.remove();
+  });
+})();
+</script>
+<script src="/app.js"></script>
+</body>
+</html>
+
+
+
+

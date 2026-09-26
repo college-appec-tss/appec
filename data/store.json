@@ -1,0 +1,120 @@
+{
+  "messages": [
+    {
+      "id": "9a10f974-8f0e-42f8-a87e-bd4fa91e88e6",
+      "recipient": "+250798809775",
+      "message": "hy",
+      "status": "queued",
+      "attempts": 0,
+      "createdAt": "2026-09-26T08:19:50.843Z",
+      "updatedAt": "2026-09-26T08:19:50.843Z",
+      "textBeeBatchId": null,
+      "textBeeMessageId": null,
+      "lastError": null
+    }
+  ],
+  "device": {
+    "_id": "6a86d7d330055990469d4067",
+    "user": "6a85f8913005599046fe58ed",
+    "enabled": true,
+    "isDefault": true,
+    "fcmTokenUpdatedAt": "2026-08-20T10:32:51.578Z",
+    "brand": "Infinix",
+    "manufacturer": "INFINIX",
+    "model": "Infinix X6525D",
+    "name": "Infinix Infinix X6525D",
+    "buildId": "UP1A.231005.007",
+    "os": "Android",
+    "osVersion": "14",
+    "osVersionSource": "buildId",
+    "appVersionName": "2.8.0",
+    "appVersionCode": 18,
+    "sentSMSCount": 98,
+    "receivedSMSCount": 182,
+    "heartbeatEnabled": true,
+    "heartbeatIntervalMinutes": 30,
+    "receiveSMSEnabled": true,
+    "smsSendDelaySeconds": 3,
+    "simInfo": {
+      "lastUpdated": "2026-09-25T17:32:24.694Z",
+      "sims": [
+        {
+          "subscriptionId": 2,
+          "cardId": 1,
+          "carrierName": "Airtel Rwanda",
+          "displayName": "Airtel Rwanda , Gervais",
+          "simSlotIndex": 0,
+          "mcc": "635",
+          "mnc": "13",
+          "countryIso": "rw",
+          "subscriptionType": "PHYSICAL_SIM",
+          "_id": "6ab6b036c9101e0cf7466d3e"
+        },
+        {
+          "subscriptionId": 1,
+          "cardId": 0,
+          "carrierName": "MTN Rwanda",
+          "displayName": "MTN Rwandarenzahoge0789683687",
+          "simSlotIndex": 1,
+          "mcc": "635",
+          "mnc": "10",
+          "countryIso": "rw",
+          "subscriptionType": "PHYSICAL_SIM",
+          "_id": "6ab6b036c9101e0cf7466d3f"
+        }
+      ],
+      "_id": "6ab6b036c9101e0cf7466d3d"
+    },
+    "createdAt": "2026-08-20T10:32:51.987Z",
+    "updatedAt": "2026-09-25T17:32:40.435Z",
+    "__v": 0,
+    "appVersionInfo": {
+      "lastUpdated": "2026-09-25T17:32:38.128Z",
+      "versionCode": 18,
+      "versionName": "2.8.0",
+      "_id": "6ab780dcc9101e0cf7ebda27"
+    },
+    "batteryInfo": {
+      "isCharging": false,
+      "lastUpdated": "2026-09-25T17:32:38.128Z",
+      "percentage": 78,
+      "_id": "6ab780dcc9101e0cf7ebda28"
+    },
+    "deviceUptimeInfo": {
+      "lastUpdated": "2026-09-25T17:32:38.128Z",
+      "uptimeMillis": 115403532,
+      "_id": "6ab780dcc9101e0cf7ebda29"
+    },
+    "lastHeartbeat": "2026-09-25T17:32:38.128Z",
+    "networkInfo": {
+      "lastUpdated": "2026-09-25T17:32:38.128Z",
+      "networkType": "cellular",
+      "_id": "6ab780dcc9101e0cf7ebda2a"
+    },
+    "systemInfo": {
+      "lastUpdated": "2026-09-25T17:32:38.128Z",
+      "locale": "fr_FR",
+      "timezone": "Africa/Kigali",
+      "_id": "6ab780dcc9101e0cf7ebda2b"
+    },
+    "memoryInfo": {
+      "freeBytes": 126241192,
+      "lastUpdated": "2026-09-25T17:32:38.128Z",
+      "maxBytes": 134217728,
+      "totalBytes": 134217728,
+      "_id": "6ab780dcc9101e0cf7ebda2c"
+    },
+    "storageInfo": {
+      "availableBytes": 17863503872,
+      "lastUpdated": "2026-09-25T17:32:38.128Z",
+      "totalBytes": 56382980096,
+      "_id": "6ab780dcc9101e0cf7ebda2d"
+    },
+    "_localStatus": {
+      "status": "offline",
+      "ageMs": 53411552,
+      "reason": "Heartbeat is too old"
+    }
+  },
+  "updatedAt": "2026-09-26T08:22:49.680Z"
+}
