@@ -1,4 +1,4 @@
 ﻿User-agent: *
 Allow: /
 
-Sitemap: https://college-appec-tss.github.io/appec/sitemap.xml
+Sitemap: https://appec-1.onrender.com/sitemap.xml
